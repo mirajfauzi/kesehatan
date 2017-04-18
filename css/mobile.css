@@ -1,3 +1,58 @@
-@media (min-width: 768px) {
-    
+@media (max-width: 768px) {
+    .main {
+        padding: 15px;
+    }
+    .social-bar {
+        padding: 15px 25px;
+    }
+    .header{ 
+        padding: 25px;
+    }
+    .brand {
+        font-size: 24pt;
+    }
+    .nav {
+        margin-top: 5px;
+    }
+    .nav > li {
+        padding-left: 5px;
+    }
+    .nav > li > a {
+        font-size: 11pt;
+    }
+    .row {
+        display: block;
+    }
+    .col > h2 > .glyphicon {
+        margin-left: 0;
+    }
+    .col > p {
+        line-height: 1;
+        margin: 0;
+    }
+    .sidebar {
+        margin-top: 50px;
+    }
+    .splash-content {
+        width: auto;
+        display: block;
+    }
+    .information {
+        padding: 50px 25px;
+    }
+    .dribpop-content {
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: calc(100% - 60px);
+    }
+    .share-list {
+        margin-top: 50px;
+    }
+    .contact-box {
+        padding: 25px;
+    }
+    #map {
+        height: 300px;
+    }
 }

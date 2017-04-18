@@ -432,7 +432,7 @@ hr {
 }
 .contact-box {
     text-align: center;
-    padding: 50px 200px;
+    padding: 50px 100px;
     background: #35b7c5;
     color: white;
 }
@@ -505,5 +505,5 @@ hr {
 }
 #map {
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
