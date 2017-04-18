@@ -503,3 +503,7 @@ hr {
 .contact-box input[type=submit]:hover {
     background: #3bbdcb;
 }
+#map {
+    width: 100%;
+    height: 600px;
+}
