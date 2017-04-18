@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Imanity</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- Internet connection is required to display fonts properly-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="./css/glyph.css">
+        <link rel="stylesheet" href="./css/master.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+    </head>
+    <body>
+        <div class="social-bar">
+            <div>
+                <span class="glyphicon glyphicon-earphone"></span>
+                022 540 7262
+            </div>
+            <div class="pull-right">
+
+            </div>
+        </div>
+        <div class="header">
+            <a href="./" class="brand">Imanity</a>
+            <div class="pull-right">
+                <ul class="nav">
+                    <li>
+                        <a href="./index.html">
+                            <span class="glyphicon glyphicon-home"></span>
+                            Beranda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cerita.html">
+                            <span class="glyphicon glyphicon-align-left"></span>
+                            Cerita</a>
+                    </li>
+                    <li>
+                        <a href="./galeri.html">
+                            <span class="glyphicon glyphicon-picture"></span>
+                            Galeri</a>
+                    </li>
+                    <li>
+                        <a href="./cari.html">
+                            <span class="glyphicon glyphicon-search"></span>
+                            Cari</a>
+                    </li>
+                    <li>
+                        <a href="./daftar.html">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dribble">
+            <script>
+                for (var i = 0; i < 15; i ++)
+                {
+                    document.write("<div class='dribble-item'>");
+                    document.write("<img src='http://placehold.it/210x140'>");
+                    document.write("<b>Item #" + (i + 1) + "</b>");
+                    // document.write("<b>Lorem ipsum dolor sit amet amat amit amit ih geleh pisan sia</b>");
+                    document.write("</div>");
+                }
+            </script>
+        </div>
+        <div class="information">
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <tr>
+                            <td>
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                            </td>
+                            <td>
+                                <p>
+                                    <b>Company Name</b> <br>
+                                    Jl. Taman Kopo Indah, No. 432 <br>
+                                    Bandung, Jawa Barat, Indonesia 40226
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <table>
+                        <tr>
+                            <td>
+                                <span class="glyphicon glyphicon-earphone"></span>
+                            </td>
+                            <td>
+                                <p>
+                                    022 540 7262
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col">
+                    <table>
+                        <tr>
+                            <td>
+                                <span class="glyphicon glyphicon-envelope"></span>
+                            </td>
+                            <td>
+                                <p>
+                                    contact@example.com
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Imanity</h1>
+            <p>
+                &copy; muraziii. All rights reserved.
+            </p>
+            <a href="#" class="glyphicon glyphicon-chevron-up"></a>
+        </div>
+        <div class="dribpop">
+            <div class="dribpop-content">
+                <div class="dribpop-close">
+                    x
+                </div>
+                <h1>Item Name</h1>
+                <hr>
+                <div class="row">
+                    <div class="col" style="flex: 2;">
+                        <div>
+                            <img src="http://placehold.it/1280x768" alt="">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam corrupti dicta doloribus ipsum saepe suscipit, perspiciatis, tempore qui? Magni inventore quibusdam quia voluptates consequuntur unde, minima fugit sit ex perspiciatis.</p>
+                        </div>
+                        <hr>
+                        <b>Comments</b>
+                        <form action="" id="commentForm" method="POST">
+                            <textarea name="" id="" cols="30" rows="3"></textarea>
+                            <button type="submit" class="pull-right">Post Comment</button>
+                        </form>
+                        <div class="comment-list">
+                            <div class="comment-box">
+                                <b>Anonymous</b>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus obcaecati voluptates dolorum neque aliquam ab, molestiae tenetur ullam tempore eius, repellat odio, modi deleniti beatae quisquam quidem. Ad, sapiente, ab!
+                                </p>
+                            </div>
+                            <div class="comment-box">
+                                <b>Anonymous</b>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur excepturi ducimus repudiandae rem maxime beatae culpa porro, id, nam corporis facere, ipsam animi architecto. Accusamus perspiciatis, recusandae? Fugiat sapiente, ea!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul class="share-list">
+                            <li><a href="#">Share to Facebook</a></li>
+                            <li><a href="#">Share to Twitter</a></li>
+                            <li><a href="#">Share to LINE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery-1.11.1.min.js"></script>
+        <script>
+            $('.dribble-item').on('click', function () {
+                $("body").addClass("dontscroll");
+                $(".dribpop").addClass("visible");
+            });
+            $(".dribpop-close").on('click', function () {
+                $("body").removeClass("dontscroll");
+                $(".dribpop").removeClass("visible")
+            });
+            $("#commentForm").on('submit', function (e) {
+                e.preventDefault();
+                var box = $("<div>").addClass("comment-box");
+                $("<b>").text("Anonymous").appendTo(box);
+                $("<p>").text($("#commentForm textarea").val()).appendTo(box);
+                box.prependTo($(".comment-list"));
+                $("#commentForm textarea").val("");
+            });
+        </script>
+    </body>
+</html>

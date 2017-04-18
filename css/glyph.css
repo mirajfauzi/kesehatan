@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+.glyphicon-home:before {
+  content: "\e021";
+}
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+.glyphicon-picture:before {
+  content: "\e060";
+}
+.glyphicon-search:before {
+  content: "\e003";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-heart:before {
+  content: "\e005";
+}
+.glyphicon-globe:before {
+  content: "\e135";
+}
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+.glyphicon-envelope:before {
+  content: "\2709";
+}

@@ -1,0 +1,33 @@
+{
+    "Bandung": [
+        {
+            "Nama": "Tempat A",
+            "Desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium aspernatur, deleniti eligendi a impedit fugit eum minima repellendus incidunt ullam error illum maxime, recusandae rem modi ut veniam tempore dicta!",
+            "Alamat": "Jl. Buah Batu No. 253A",
+            "Alamat2": "Sekitar, Bandung, Indonesia",
+            "KodePos": "40404",
+            "Image": "TempatA.jpg",
+            "Tel": "022 547 2346"
+        },
+        {
+            "Nama": "Tempat B",
+            "Desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium aspernatur, deleniti eligendi a impedit fugit eum minima repellendus incidunt ullam error illum maxime, recusandae rem modi ut veniam tempore dicta!",
+            "Alamat": "Jl. Cihampelas No. 23A",
+            "Alamat2": "Sekitar, Bandung, Indonesia",
+            "KodePos": "40666",
+            "Image": "TempatB.jpg",
+            "Tel": "022 523 4567"
+        }
+    ],
+    "Jakarta": [
+        {
+            "Nama": "Tempat A - Jakarta",
+            "Desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium aspernatur, deleniti eligendi a impedit fugit eum minima repellendus incidunt ullam error illum maxime, recusandae rem modi ut veniam tempore dicta!",
+            "Alamat": "Jl. Ga tau dimana No. Sekian",
+            "Alamat2": "Sekitar, Jakarta, Indonesia",
+            "KodePos": "40444",
+            "Image": "TempatC.jpg",
+            "Tel": "021 345 2273"
+        }
+    ]
+}
