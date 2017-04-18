@@ -55,4 +55,10 @@
     #map {
         height: 300px;
     }
+    .numbers {
+        padding: 25px 0;
+    }
+    .numbers .col {
+        margin: 50px 0;
+    }
 }

@@ -71,10 +71,24 @@
             </div>
         </div>-->
         <div id="map"></div>
+        <div class="map-dropdown">
+            <form action=" ">
+                <select name="kota" id="kota">
+                    <option value="">Pilih Kota</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Jogjakarta">Jogjakarta</option>
+                </select>
+            </form>
+        </div>
         <script>
+            var bandung = {lat: -6.9175, lng: 107.6191};
+            var jakarta = {lat: -6.1745, lng: 106.8227};
+            var surabaya = {lat: -7.2575, lng: 112.7521};
+            var jogjakarta = {lat: -7.7956, lng: 110.3695};
             var map;
             function initMap() {
-                var bandung = {lat: -6.9175, lng: 107.6191};
                 map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 12,
                     center: bandung,
@@ -332,42 +346,23 @@
                     { position: {lat: -6.917074, lng: 107.611471} },
                     { position: {lat: -6.904761, lng: 107.621728} }
                 ];
-                
+
                 features.forEach(function (feature) {
                     var marker = new google.maps.Marker({
                         position: feature.position,
                         map: map
                     });
+                    marker.addListener('click', function() {
+                        var contentString = "<b>Rumah Singgah X</b>";
+                        var infoWindow = new google.maps.InfoWindow({
+                            content: contentString,
+                            maxWidth: 200
+                        });
+                        infoWindow.open(map, marker);
+                    });
                 });
             };
-
         </script>
-        <!--<div class="main">
-            <div class="place-list">
-                <div class="list-item">
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="./assets/" alt="">
-                            </td>
-                            <td>
-                                <div class="name">Tempat #1</div>
-                                <div class="desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium aspernatur, deleniti eligendi a impedit fugit eum minima repellendus incidunt ullam error illum maxime, recusandae rem modi ut veniam tempore dicta!
-                                </div>
-                                <div class="address">
-                                    Jl. Asal asalan No. 6 Bandung
-                                </div>
-                                <div class="telephone">
-                                    <span class="glyphicon glyphicon-earphone"></span>
-                                    022 513 2266
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>-->
         <div class="information">
             <div class="row">
                 <div class="col">
@@ -379,7 +374,7 @@
                             <td>
                                 <p>
                                     <b>Company Name</b> <br>
-                                    Jl. Taman Kopo Indah, No. 432 <br>
+                                    Jl. Kopo, No. 432-A <br>
                                     Bandung, Jawa Barat, Indonesia 40226
                                 </p>
                             </td>
@@ -424,7 +419,13 @@
             <a href="#" class="glyphicon glyphicon-chevron-up"></a>
         </div>
         <script src="./js/jquery-1.11.1.min.js"></script>
-        <script src="./js/load-town.js"></script>
+        <script>
+            $("#kota").on('change', function() {
+                // alert(window[$("#kota").val().toLowerCase()]);
+                map.setCenter(window[$("#kota").val().toLowerCase()]);
+            });
+        </script>
+        <!--<script src="./js/load-town.js"></script>-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWtv6aAcvVcYbpeZ8-AHNM5lSgF6Ah3Nc&callback=initMap" async defer></script>
         <!--<script src="./js/load-places.js"></script>-->
     </body>
