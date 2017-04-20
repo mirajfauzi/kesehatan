@@ -210,8 +210,22 @@ hr {
     margin-top: 25px;
     padding: 15px;
 }
-.article-footer img {
+.article-share {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.article-share.facebook {
+    background: #25a7b5;
+}
+.article-share.twitter {
+    background: #25a7b5;    
+}
+.article-share img {
     width: 20px;
+    vertical-align: middle;
 }
 .readmore {
     border: 3px solid #ff6a28;
