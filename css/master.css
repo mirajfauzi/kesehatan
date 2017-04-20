@@ -328,8 +328,10 @@ hr {
     line-height: 1.5;
 }
 .information {
-    padding: 100px 50px;
+    padding: 0 50px;
+    margin-bottom: 50px;
     color: #ff6a28;
+    text-align: left;
 }
 .information .glyphicon {
     font-size: 32pt;
@@ -545,7 +547,8 @@ hr {
     color: #eef;
     font-weight: bold;
 }*/
-.contact-box input[type=submit] {
+.contact-box input[type=submit],
+.contact-box button {
     border: 0;
     /*border: 3px solid #25a7b5;*/
     background: transparent;
@@ -561,7 +564,8 @@ hr {
     font-weight: bold;
     box-shadow: 5px 5px 0 #25a7b5;
 }
-.contact-box input[type=submit]:hover {
+.contact-box input[type=submit]:hover,
+.contact-box button:hover {
     background: #3bbdcb;
 }
 #map {
@@ -577,10 +581,12 @@ hr {
     padding: 100px 0;
     color: white;
 }
-.numbers b {
+.numbers b,
+b.numbers-like {
     font-size: 28pt;
 }
-.numbers p {
+.numbers p,
+p.numbers-like {
     margin: 0;
     color: inherit;
     line-height: 1;
@@ -595,4 +601,22 @@ hr {
     font-weight: bold;
     font-size: 12pt;
     font-family: inherit;
+}
+.text-center {
+    text-align: center;
+}
+.vlntr-btn {
+    font-family: inherit;
+    padding: 15px;
+    font-size: 14pt;
+    background: transparent;
+    border: 3px solid #ff6a28;
+    color: #ff6a28;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+.vlntr-btn:hover {
+    background: #ff6a28;
+    color: white;
 }

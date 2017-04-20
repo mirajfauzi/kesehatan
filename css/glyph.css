@@ -58,3 +58,6 @@
 .glyphicon-envelope:before {
   content: "\2709";
 }
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
