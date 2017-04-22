@@ -384,10 +384,13 @@ hr {
     background: #f0f0f0;
     box-shadow: none;
 }
-.dribble-item > img {
+.dribble-image {
     display: block;
-    max-width: 210px;
-    max-height: 140px;
+    width: 210px;
+    height: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
 }
 .dribble-item > b {

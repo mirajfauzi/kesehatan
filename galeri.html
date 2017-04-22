@@ -67,8 +67,9 @@
             <script>
                 for (var i = 0; i < 15; i ++)
                 {
+                    var j = Math.floor((Math.random() * 7) + 1);
                     document.write("<div class='dribble-item'>");
-                    document.write("<img src='http://placehold.it/210x140'>");
+                    document.write("<span class='dribble-image' style='background-image: url(\"./assets/gallery/img" + j + ".jpg\")'></span>");
                     document.write("<b>Item #" + (i + 1) + "</b>");
                     // document.write("<b>Lorem ipsum dolor sit amet amat amit amit ih geleh pisan sia</b>");
                     document.write("</div>");
@@ -140,7 +141,7 @@
                 <div class="row">
                     <div class="col" style="flex: 2;">
                         <div>
-                            <img src="http://placehold.it/1280x768" alt="">
+                            <img class="main-img" src="http://placehold.it/1280x768" alt="">
                         </div>
                         <div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam corrupti dicta doloribus ipsum saepe suscipit, perspiciatis, tempore qui? Magni inventore quibusdam quia voluptates consequuntur unde, minima fugit sit ex perspiciatis.</p>
@@ -183,6 +184,9 @@
         <script>
             $('.dribble-item').on('click', function () {
                 $("body").addClass("dontscroll");
+                var img = $(this).children(".dribble-image")[0].style.backgroundImage;
+                var img = img.replace('url(','').replace(')', '').replace(/\"/gi, "");
+                $(".dribpop .main-img").attr("src", img);
                 $(".dribpop").addClass("visible");
             });
             $(".dribpop-close").on('click', function () {
